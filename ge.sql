@@ -54,22 +54,22 @@ CREATE TABLE TELEFONE_CLIENTE (
 );
  
 INSERT INTO BANCO  
-VALUES ( 1, 'Banco do Bradesco'), (4, 'CEF' ); 
+VALUES ( 1, 'Banco do Bradesco'), (5, 'CEF' ); 
  
 INSERT INTO AGENCIA 
-VALUES (0562, 'Rua Joaquim Teixeira Alves, 1555', 4), (3153, 'Av. Marcelino Pires, 1960', 1 ); 
+VALUES (01223, 'Rua Joaquim Teixeira Alves, 1555', 4), (3153, 'Av. Marcelino Pires, 1960', 1 ); 
  
 INSERT INTO CLIENTE 
-VALUES ('111.222.333-44', 'GABRYELLY SILVA', 'F', 'Rua Cuiabá, 1050'), ('666.777.888-99', 'Gabryelly Silva', 'M', 'Rua Ivinhema, 879'), ('555.444.777-33', 'Silvia Macedo', 'F', 'Rua Estados Unidos, 735'); 
+VALUES ('111.222.333-44', 'GABRYELLY SILVA', 'F', 'Rua saude, 1050'), ('555.490.531-99', 'Gabryelly Silva', 'f', 'Rua saude, 879'), ('555.444.777-33', 'luiza silva', 'F', 'sao jose', 735'); 
  
 INSERT INTO CONTA 
 VALUES ('86340-2', 763.05, 2, 3153), ('23584-7', 3879.12, 1, 0562); 
  
 INSERT INTO HISTORICO 
-VALUES ('111.222.333-44', 	'23584-7', 	'1997-12-17'), 	('666.777.888-99', 	'23584-7', 	'1997-12-17'), ('555.444.777-33', '86340-2', '2010-11-29'); 
+VALUES ('111.222.333-44', 	'23584-7', 	'1997-12-17'), 	('555.490.531-99', 	'23584-7', 	'1997-12-17'), ('555.490.531-99', '86340-2', '2023-12-12'); 
  
 INSERT INTO TELEFONE_CLIENTE 
-VALUES ('111.222.333-44', '(64)3422-7788'), ('666.777.888-99', '(67)3423-9900'), ('666.777.888-99', 
+VALUES ('111.222.333-44', '(64)3422-7788'), ('555.490.531-99', '(67)3423-9900'), ('555.490.531-99', 
 '(64)8121-8833')
 ; 
 ALTER TABLE CLIENTE ADD Email VARCHAR(255); 
@@ -95,7 +95,7 @@ FROM  	BANCO, AGENCIA
 WHERE 	Codigo=Cod_banco AND Numero_agencia=01223; 
 
 DELETE FROM 	CONTA 
-WHERE 	 	Numero_conta ='86340-2'; 
+WHERE 	 	Numero_conta ='87012-3'; 
 -
  
 
